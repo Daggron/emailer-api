@@ -1,7 +1,6 @@
-# static-site-emailer
+# Emailer api
 A simple service to send contact or form data in a form of email to the site admin.
 
-# Emailer api
 
 ### Description 
  As the name suggests emailer API is used to send email from your static site to your chosen email address
