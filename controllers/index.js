@@ -24,7 +24,9 @@ exports.mailer = async (req,res) => {
         from: `${name} ⚡ 🖐`,
         to: `${supportmail}`,
         subject: `${subject? subject: '"Contact Support Form Email Recieved"'}`,
-        html: `${message} ${phoneNumber? `<br/><Strong>Contact number ${phoneNumber}</Strong>`: ''}
+        html: `${message}
+               ${name? `<br/><Strong>Name ${name}</Strong>`: ''} 
+               ${phoneNumber? `<br/><Strong>Contact number ${phoneNumber}</Strong>`: ''}
                ${userEmail? `<br/><Strong>User Email ${userEmail}</Strong>`: ''}`,
     });
 
